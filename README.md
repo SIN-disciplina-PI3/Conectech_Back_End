@@ -34,9 +34,7 @@ O Projeto Backend Conectech é uma aplicação desenvolvida para fornecer uma AP
 
 ## Pré-requisitos
 
-- Java
-- Maven
-- Spring Boot
+- Docker
 
 ## Executando o Projeto
 
@@ -44,20 +42,20 @@ O Projeto Backend Conectech é uma aplicação desenvolvida para fornecer uma AP
    ```bash
    git clone https://github.com/seu-usuario/seu-repositorio
    ```
-Entre na pasta do projeto:
+Entre na pasta do projeto onde estiver o DockerFile:
 ```bash
 Copy code
 cd seu-repositorio
 ```
-Compile o projeto:
+Construa o Projeto
 ```bash
 Copy code
-mvn clean install
+docker-compose build
 ```
 Execute o projeto:
 ```bash
 Copy code
-mvn spring-boot:run
+docker-compose up -d
 ```
 # Autor
 Este projeto foi desenvolvido por Felipe Ferreira,Lara Nunes,Cauã Sebastian,Thales Thiago,Maria Helena e Edgar Tavares.
